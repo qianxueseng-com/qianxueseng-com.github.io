@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: javascript | 前学僧</title>
+  <title>Isomorphic React render | 前学僧</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="前学僧">
-<meta property="og:url" content="http://qianxueseng.com/tags/javascript/index.html">
+  <meta name="description" content="服务器和客户端重用React代码大家都崇拜在服务器和客户端重用React代码.所有看上去美好的事情都是有坑，上帝不是教导过你，没有免费的午餐吗？目前碰到的坑有：
+性能问题因为React比一般的模板框架例如(mustache)要考虑更多的事情，所以在纯粹生成HTML上并没有那么有效率。有文章指出，说和mustache比起来，React要慢一个数量级。Mustache几十毫秒搞定的，React需要几百">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Isomorphic React render">
+<meta property="og:url" content="http://qianxueseng.com/2015/10/Isomorphic-React-render/index.html">
 <meta property="og:site_name" content="前学僧">
-<meta property="og:description">
+<meta property="og:description" content="服务器和客户端重用React代码大家都崇拜在服务器和客户端重用React代码.所有看上去美好的事情都是有坑，上帝不是教导过你，没有免费的午餐吗？目前碰到的坑有：
+性能问题因为React比一般的模板框架例如(mustache)要考虑更多的事情，所以在纯粹生成HTML上并没有那么有效率。有文章指出，说和mustache比起来，React要慢一个数量级。Mustache几十毫秒搞定的，React需要几百">
+<meta property="og:updated_time" content="2015-10-21T04:19:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前学僧">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Isomorphic React render">
+<meta name="twitter:description" content="服务器和客户端重用React代码大家都崇拜在服务器和客户端重用React代码.所有看上去美好的事情都是有坑，上帝不是教导过你，没有免费的午餐吗？目前碰到的坑有：
+性能问题因为React比一般的模板框架例如(mustache)要考虑更多的事情，所以在纯粹生成HTML上并没有那么有效率。有文章指出，说和mustache比起来，React要慢一个数量级。Mustache几十毫秒搞定的，React需要几百">
   
     <link rel="alternative" href="/atom.xml" title="前学僧" type="application/atom+xml">
   
@@ -77,39 +81,59 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/10/js-basics-closure/" class="archive-article-date">
-  <time datetime="2015-10-04T21:12:07.000Z" itemprop="datePublished">Oct 4</time>
+        <section id="main"><article id="post-Isomorphic-React-render" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/Isomorphic-React-render/" class="article-date">
+  <time datetime="2015-10-21T04:06:04.000Z" itemprop="datePublished">2015-10-20</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/10/js-basics-closure/">js basics closure</a>
+    <h1 class="article-title" itemprop="name">
+      Isomorphic React render
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="服务器和客户端重用React代码">服务器和客户端重用React代码</h1><p>大家都崇拜在服务器和客户端重用React代码.所有看上去美好的事情都是有坑，上帝不是教导过你，没有免费的午餐吗？<br>目前碰到的坑有：</p>
+<h3 id="性能问题">性能问题</h3><p>因为React比一般的模板框架例如(mustache)要考虑更多的事情，所以在纯粹生成HTML上并没有那么有效率。有<a href="http://www.slideshare.net/nickdreckshage/react-meetup" target="_blank" rel="external">文章</a>指出，说和mustache比起来，React要慢一个数量级。Mustache几十毫秒搞定的，React需要几百毫秒。</p>
+<h3 id="架构问题">架构问题</h3><p>很多常用的Flux库都不能够支持服务器段的渲染，因为singleton在React/Flux架构中无处不在，无时不有。这个在浏览器里面是没有任何坏处的，可是在服务器段就不行了。具体上说，store/dispatcher都最好不是singleton。</p>
+<h3 id="代码复杂程度">代码复杂程度</h3><p>要同时支持服务器和客户端渲染是1+1&gt;2。特别是在涉及到需要从其他地方取数据的时候，支持两个环境渲染意味着在两个环境里面都需要去拿数据。</p>
+<h3 id="归根结底">归根结底</h3><p>在两个环境里重用确实好，但是绝对要付出代价。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://qianxueseng.com/2015/10/Isomorphic-React-render/" data-id="cig0ajejp000i7lbo7iqefmhv" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/isomorphic/">isomorphic</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/10/react-native-FAQ/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">react native FAQ</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
 </section>
         
           <aside id="sidebar">

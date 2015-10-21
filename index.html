@@ -79,6 +79,49 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-Isomorphic-React-render" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/Isomorphic-React-render/" class="article-date">
+  <time datetime="2015-10-21T04:06:04.000Z" itemprop="datePublished">2015-10-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/Isomorphic-React-render/">Isomorphic React render</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="服务器和客户端重用React代码">服务器和客户端重用React代码</h1><p>大家都崇拜在服务器和客户端重用React代码.所有看上去美好的事情都是有坑，上帝不是教导过你，没有免费的午餐吗？<br>目前碰到的坑有：</p>
+<h3 id="性能问题">性能问题</h3><p>因为React比一般的模板框架例如(mustache)要考虑更多的事情，所以在纯粹生成HTML上并没有那么有效率。有<a href="http://www.slideshare.net/nickdreckshage/react-meetup" target="_blank" rel="external">文章</a>指出，说和mustache比起来，React要慢一个数量级。Mustache几十毫秒搞定的，React需要几百毫秒。</p>
+<h3 id="架构问题">架构问题</h3><p>很多常用的Flux库都不能够支持服务器段的渲染，因为singleton在React/Flux架构中无处不在，无时不有。这个在浏览器里面是没有任何坏处的，可是在服务器段就不行了。具体上说，store/dispatcher都最好不是singleton。</p>
+<h3 id="代码复杂程度">代码复杂程度</h3><p>要同时支持服务器和客户端渲染是1+1&gt;2。特别是在涉及到需要从其他地方取数据的时候，支持两个环境渲染意味着在两个环境里面都需要去拿数据。</p>
+<h3 id="归根结底">归根结底</h3><p>在两个环境里重用确实好，但是绝对要付出代价。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://qianxueseng.com/2015/10/Isomorphic-React-render/" data-id="cig0ajejp000i7lbo7iqefmhv" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/isomorphic/">isomorphic</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-react-native-FAQ" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/10/react-native-FAQ/" class="article-date">
@@ -112,7 +155,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/react-native-FAQ/" data-id="cifp1cvns0004o38z0of1qqkz" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/react-native-FAQ/" data-id="cig0ajeja00047lboi75agziv" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react-native/">react native</a></li></ul>
@@ -161,7 +204,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/react-native-install/" data-id="cifp1cvnd0001o38z5g5gtssr" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/react-native-install/" data-id="cig0ajeix00017lboyk0pwuae" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react-native/">react native</a></li></ul>
@@ -204,7 +247,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/frontend-interview-questions/" data-id="cifp1cvo5000go38z8xaw2sb2" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/frontend-interview-questions/" data-id="cig0ajejn000g7lboih2db4ky" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/interview/">interview</a></li></ul>
@@ -247,7 +290,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/js-basics-closure/" data-id="cifp1cvnv0006o38zg67ixer0" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/js-basics-closure/" data-id="cig0ajejd00067lbo0mbchygv" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/closure/">closure</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/interview/">interview</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
@@ -289,7 +332,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/how-to-start/" data-id="cifp1cvny000do38zz7ikkyoo" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/how-to-start/" data-id="cig0ajejh000d7lbowi8rc8z8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -346,7 +389,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/zero-to-one/" data-id="cifp1cvmj0000o38zbkz1ts96" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/zero-to-one/" data-id="cig0ajei100007lbon6shp53o" class="article-share-link">Share</a>
       
       
     </footer>
@@ -385,7 +428,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/42/" data-id="cifp1cvo8000io38zo8rz66fi" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/42/" data-id="cig0ajejt000l7lboa8jl2x30" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/42/">42</a></li></ul>
@@ -432,7 +475,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/hello-world/" data-id="cifp1cvo0000eo38z8szuzsa6" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/hello-world/" data-id="cig0ajeji000e7lbo24xualz6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -468,7 +511,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/hello-world-1/" data-id="cifp1cvo3000fo38zhw1iz3t7" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/hello-world-1/" data-id="cig0ajejl000f7lbovq2yktlh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -489,7 +532,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/42/">42</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/closure/">closure</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/">interview</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react-native/">react native</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/42/">42</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/closure/">closure</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/">interview</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/isomorphic/">isomorphic</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react-native/">react native</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -498,7 +541,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/42/" style="font-size: 10px;">42</a> <a href="/tags/closure/" style="font-size: 10px;">closure</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/react-native/" style="font-size: 20px;">react native</a>
+      <a href="/tags/42/" style="font-size: 10px;">42</a> <a href="/tags/closure/" style="font-size: 10px;">closure</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a> <a href="/tags/isomorphic/" style="font-size: 10px;">isomorphic</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/react-native/" style="font-size: 20px;">react native</a>
     </div>
   </div>
 
@@ -507,7 +550,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">9</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">10</span></li></ul>
     </div>
   </div>
 
@@ -517,6 +560,10 @@ ga('send', 'pageview');
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2015/10/Isomorphic-React-render/">Isomorphic React render</a>
+          </li>
         
           <li>
             <a href="/2015/10/react-native-FAQ/">react native FAQ</a>
@@ -532,10 +579,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2015/10/js-basics-closure/">js basics closure</a>
-          </li>
-        
-          <li>
-            <a href="/2015/10/how-to-start/">how to start</a>
           </li>
         
       </ul>
