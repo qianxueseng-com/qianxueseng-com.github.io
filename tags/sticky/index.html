@@ -3,18 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>js basics closure | 前学僧</title>
+  <title>Tag: sticky | 前学僧</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="常见前端面试问题之闭包1234567891011121314151617181920212223// 提示：点哪个按钮就显示&quot;你点击了第几个按钮&quot;// http://www.zhihu.com/question/36188340// --------------// 错误，原始的做法A/*for(var i=0; i&amp;lt;4; i++) &amp;#123;  $(&apos;#id&apos; + i).click(fu">
-<meta property="og:type" content="article">
-<meta property="og:title" content="js basics closure">
-<meta property="og:url" content="http://qianxueseng.com/2015/10/js-basics-closure/index.html">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="前学僧">
+<meta property="og:url" content="http://qianxueseng.com/tags/sticky/index.html">
 <meta property="og:site_name" content="前学僧">
-<meta property="og:description" content="常见前端面试问题之闭包1234567891011121314151617181920212223// 提示：点哪个按钮就显示&quot;你点击了第几个按钮&quot;// http://www.zhihu.com/question/36188340// --------------// 错误，原始的做法A/*for(var i=0; i&amp;lt;4; i++) &amp;#123;  $(&apos;#id&apos; + i).click(fu">
-<meta property="og:updated_time" content="2015-10-04T21:27:46.000Z">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="js basics closure">
-<meta name="twitter:description" content="常见前端面试问题之闭包1234567891011121314151617181920212223// 提示：点哪个按钮就显示&quot;你点击了第几个按钮&quot;// http://www.zhihu.com/question/36188340// --------------// 错误，原始的做法A/*for(var i=0; i&amp;lt;4; i++) &amp;#123;  $(&apos;#id&apos; + i).click(fu">
+<meta name="twitter:title" content="前学僧">
+<meta name="twitter:description">
   
     <link rel="alternative" href="/atom.xml" title="前学僧" type="application/atom+xml">
   
@@ -78,68 +77,39 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-js-basics-closure" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/10/js-basics-closure/" class="article-date">
-  <time datetime="2015-10-04T21:12:07.000Z" itemprop="datePublished">2015-10-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+        <section id="main">
   
-    <h1 class="article-title" itemprop="name">
-      js basics closure
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2015" class="archive-year">2015</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2015/10/how-to-start/" class="archive-article-date">
+  <time datetime="2015-10-04T20:44:37.000Z" itemprop="datePublished">Oct 4</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2015/10/how-to-start/">how to start</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="常见前端面试问题之闭包">常见前端面试问题之闭包</h1><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 提示：点哪个按钮就显示"你点击了第几个按钮"</span></span><br><span class="line"><span class="comment">// http://www.zhihu.com/question/36188340</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// --------------</span></span><br><span class="line"><span class="comment">// 错误，原始的做法A</span></span><br><span class="line"><span class="comment">/*for(var i=0; i&lt;4; i++) &#123;</span><br><span class="line">  $('#id' + i).click(function()&#123;</span><br><span class="line">    alert(i);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ---------------</span></span><br><span class="line"><span class="comment">// 正确，原始的做法B</span></span><br><span class="line"><span class="keyword">var</span> getHandler = <span class="function"><span class="keyword">function</span><span class="params">(counter)</span> </span>&#123;</span><br><span class="line">  <span class="comment">// 这儿出现了一个新的scope</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span><br><span class="line">    alert(counter);    </span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;<span class="number">4</span>; i++) &#123;</span><br><span class="line">  $(<span class="string">'#id'</span> + i).click( getHandler(i) );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="Ref">Ref</h4><ul>
-<li><a href="http://codepen.io/getshao/pen/vNxbaM" target="_blank" rel="external">http://codepen.io/getshao/pen/vNxbaM</a></li>
-<li><a href="http://www.sitepoint.com/javascript-closures-demystified/" target="_blank" rel="external">http://www.sitepoint.com/javascript-closures-demystified/</a></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/js-basics-closure/" data-id="cigfn1o830009sdbossc5oi3z" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/closure/">closure</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/interview/">interview</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2015/10/frontend-interview-questions/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          frontend interview questions
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2015/10/how-to-start/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">how to start</div>
-    </a>
-  
-</nav>
-
-  
 </article>
-
+  
+  
+    </div></section>
+  
 </section>
         
           <aside id="sidebar">
