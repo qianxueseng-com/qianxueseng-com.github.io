@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Isomorphic React render | 前学僧 | 做项目，学前端</title>
+  <title>linting-with-eslint-and-atom-video | 前学僧 | 做项目，学前端</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="服务器和客户端重用React代码大家都崇拜在服务器和客户端重用React代码.所有看上去美好的事情都是有坑，上帝不是教导过你，没有免费的午餐吗？目前碰到的坑有：
-性能问题因为React比一般的模板框架例如(mustache)要考虑更多的事情，所以在纯粹生成HTML上并没有那么有效率。有文章指出，说和mustache比起来，React要慢一个数量级。Mustache几十毫秒搞定的，React需要几百">
+  <meta name="description" content="Linting with ESLint and Atom配套的前端笔记
+  	&amp;lt;!-- 页面内多处使用iframe代码，后面的JS代码只需要使用一次(作用是调整iframe的高度) --&amp;gt;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Isomorphic React render">
-<meta property="og:url" content="http://qianxueseng.com/2015/10/Isomorphic-React-render/index.html">
+<meta property="og:title" content="linting-with-eslint-and-atom-video">
+<meta property="og:url" content="http://qianxueseng.com/2015/12/linting-with-eslint-and-atom-video/index.html">
 <meta property="og:site_name" content="前学僧 | 做项目，学前端">
-<meta property="og:description" content="服务器和客户端重用React代码大家都崇拜在服务器和客户端重用React代码.所有看上去美好的事情都是有坑，上帝不是教导过你，没有免费的午餐吗？目前碰到的坑有：
-性能问题因为React比一般的模板框架例如(mustache)要考虑更多的事情，所以在纯粹生成HTML上并没有那么有效率。有文章指出，说和mustache比起来，React要慢一个数量级。Mustache几十毫秒搞定的，React需要几百">
-<meta property="og:updated_time" content="2015-10-21T04:19:24.000Z">
+<meta property="og:description" content="Linting with ESLint and Atom配套的前端笔记
+  	&amp;lt;!-- 页面内多处使用iframe代码，后面的JS代码只需要使用一次(作用是调整iframe的高度) --&amp;gt;">
+<meta property="og:updated_time" content="2015-12-28T09:06:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Isomorphic React render">
-<meta name="twitter:description" content="服务器和客户端重用React代码大家都崇拜在服务器和客户端重用React代码.所有看上去美好的事情都是有坑，上帝不是教导过你，没有免费的午餐吗？目前碰到的坑有：
-性能问题因为React比一般的模板框架例如(mustache)要考虑更多的事情，所以在纯粹生成HTML上并没有那么有效率。有文章指出，说和mustache比起来，React要慢一个数量级。Mustache几十毫秒搞定的，React需要几百">
+<meta name="twitter:title" content="linting-with-eslint-and-atom-video">
+<meta name="twitter:description" content="Linting with ESLint and Atom配套的前端笔记
+  	&amp;lt;!-- 页面内多处使用iframe代码，后面的JS代码只需要使用一次(作用是调整iframe的高度) --&amp;gt;">
   
     <link rel="alternative" href="/atom.xml" title="前学僧 | 做项目，学前端" type="application/atom+xml">
   
@@ -88,10 +88,10 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-Isomorphic-React-render" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-linting-with-eslint-and-atom-video" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/10/Isomorphic-React-render/" class="article-date">
-  <time datetime="2015-10-21T04:06:04.000Z" itemprop="datePublished">2015-10-20</time>
+    <a href="/2015/12/linting-with-eslint-and-atom-video/" class="article-date">
+  <time datetime="2015-12-28T09:00:02.000Z" itemprop="datePublished">2015-12-28</time>
 </a>
     
   </div>
@@ -102,7 +102,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      Isomorphic React render
+      linting-with-eslint-and-atom-video
     </h1>
   
 
@@ -110,39 +110,26 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="服务器和客户端重用React代码">服务器和客户端重用React代码</h1><p>大家都崇拜在服务器和客户端重用React代码.所有看上去美好的事情都是有坑，上帝不是教导过你，没有免费的午餐吗？<br>目前碰到的坑有：</p>
-<h3 id="性能问题">性能问题</h3><p>因为React比一般的模板框架例如(mustache)要考虑更多的事情，所以在纯粹生成HTML上并没有那么有效率。有<a href="http://www.slideshare.net/nickdreckshage/react-meetup" target="_blank" rel="external">文章</a>指出，说和mustache比起来，React要慢一个数量级。Mustache几十毫秒搞定的，React需要几百毫秒。</p>
-<h3 id="架构问题">架构问题</h3><p>很多常用的Flux库都不能够支持服务器段的渲染，因为singleton在React/Flux架构中无处不在，无时不有。这个在浏览器里面是没有任何坏处的，可是在服务器段就不行了。具体上说，store/dispatcher都最好不是singleton。</p>
-<h3 id="代码复杂程度">代码复杂程度</h3><p>要同时支持服务器和客户端渲染是1+1&gt;2。特别是在涉及到需要从其他地方取数据的时候，支持两个环境渲染意味着在两个环境里面都需要去拿数据。</p>
-<h3 id="归根结底">归根结底</h3><p>在两个环境里重用确实好，但是绝对要付出代价。</p>
+        <h1 id="Linting_with_ESLint_and_Atom">Linting with ESLint and Atom</h1><h2 id="配套的前端笔记"><a href="//qianxueseng.com/guides/linting-react-with-eslint-and-atom">配套的前端笔记</a></h2>
+  <iframe src="http://play.video.qcloud.com/iplayer.html?$appid=1251736431&$fileid=14651978969256161994&$autoplay=0&$sw=1280&$sh=720" frameborder="0" width="100%" height="720" scrolling="no"></iframe>	<!-- 页面内多处使用iframe代码，后面的JS代码只需要使用一次(作用是调整iframe的高度) -->	<script src="http://qzonestyle.gtimg.cn/open/qcloud/video/h5/fixifmheight.js" charset="utf-8"></script>
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/Isomorphic-React-render/" data-id="ciipqjjoi001hc38zpn5u86bc" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/12/linting-with-eslint-and-atom-video/" data-id="ciipqjjnm000qc38z4bshess7" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/isomorphic/">isomorphic</a></li></ul>
-
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2015/10/most-people-wont/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          most people wont
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/10/react-native-FAQ/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/12/github-pages-tips/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">react native FAQ</div>
+      <div class="article-nav-title">github-pages-tips </div>
     </a>
   
 </nav>
