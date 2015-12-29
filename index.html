@@ -109,6 +109,56 @@ ga('send', 'pageview');
 
 
   
+    <article id="post-github-pages-custom-domain" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/12/github-pages-custom-domain/" class="article-date">
+  <time datetime="2015-12-29T06:42:37.000Z" itemprop="datePublished">2015-12-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/github-pages-custom-domain/">github pages custom domain</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="给github_pages设置域名">给github pages设置域名</h1><h3 id="步骤">步骤</h3><ul>
+<li><p>创建一个repo，例如<a href="https://github.com/qianxueseng-com/askvc.com" target="_blank" rel="external">https://github.com/qianxueseng-com/askvc.com</a></p>
+</li>
+<li><p>clone到本地并创建gh-pages branch然后push</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/qianxueseng-<span class="keyword">com</span>/askvc.<span class="keyword">com</span>.git</span><br><span class="line">git checkout -<span class="keyword">b</span> gh-pages</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"askvc.com"</span> &gt; CNAME</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"this is index.html"</span> &gt; <span class="built_in">index</span>.html</span><br><span class="line">git <span class="built_in">add</span> .</span><br><span class="line">git commit</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置DNS</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">askvc</span><span class="class">.com</span> <span class="tag">--</span> <span class="tag">A</span>     <span class="tag">--</span> 192<span class="class">.30</span><span class="class">.252</span><span class="class">.153</span></span><br><span class="line"><span class="tag">askvc</span><span class="class">.com</span> <span class="tag">--</span> <span class="tag">A</span>     <span class="tag">--</span> 192<span class="class">.30</span><span class="class">.252</span><span class="class">.154</span></span><br><span class="line"><span class="tag">www</span>       <span class="tag">--</span> <span class="tag">CNAME</span> <span class="tag">--</span> <span class="tag">askvc</span><span class="class">.com</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>大功告成，可以访问<a href="askvc.com">askvc</a></p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://qianxueseng.com/2015/12/github-pages-custom-domain/" data-id="ciir1kaia0018008z3uiczf77" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-the-zen-of-python" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/12/the-zen-of-python/" class="article-date">
@@ -177,7 +227,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/12/the-zen-of-python/" data-id="ciiqkqoyl000fvx8zhimwd59d" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/12/the-zen-of-python/" data-id="ciir1kagx000f008z1nltfa5y" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zen/">zen</a></li></ul>
@@ -218,7 +268,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/12/linting-with-eslint-and-atom-video/" data-id="ciiqkqozj000tvx8z4tusrjsz" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/12/linting-with-eslint-and-atom-video/" data-id="ciir1kahp000t008zhha3j26c" class="article-share-link">Share</a>
       
       
     </footer>
@@ -265,7 +315,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/12/github-pages-tips/" data-id="ciiqkqp060015vx8zwnxblgn9" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/12/github-pages-tips/" data-id="ciir1kai50015008zlt20l1ym" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li></ul>
@@ -307,7 +357,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/11/the-wrong-way-to-learn-front-end/" data-id="ciiqkqoyr000ivx8zqqkldzk1" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/11/the-wrong-way-to-learn-front-end/" data-id="ciir1kah2000i008zh82rdlju" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
@@ -347,7 +397,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/11/what-is-h5/" data-id="ciiqkqoyf0009vx8znor2g072" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/11/what-is-h5/" data-id="ciir1kagt0009008zfcoo3cab" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html5/">html5</a></li></ul>
@@ -392,7 +442,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/11/commonjs/" data-id="ciiqkqp0b001avx8z1cq1p9xs" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/11/commonjs/" data-id="ciir1kaig001c008z5gt02cnf" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/commonjs/">commonjs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/module/">module</a></li></ul>
@@ -432,7 +482,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/11/wechat-web-apps/" data-id="ciiqkqoyi000cvx8zh0q9awtb" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/11/wechat-web-apps/" data-id="ciir1kagv000c008zn69rhr6c" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wechat/">wechat</a></li></ul>
@@ -484,7 +534,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/11/which-os-for-front-end/" data-id="ciiqkqoy60004vx8z0nxr3w8o" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/11/which-os-for-front-end/" data-id="ciir1kagm0004008zly55bfy3" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/os/">os</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tools/">tools</a></li></ul>
@@ -523,7 +573,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/add-a-sticky-post/" data-id="ciiqkqp0e001hvx8zs2c6wyy5" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/add-a-sticky-post/" data-id="ciir1kaij001j008ztzd9d4o3" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -567,7 +617,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/most-people-wont/" data-id="ciiqkqozb000qvx8zs4ucr2y9" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/most-people-wont/" data-id="ciir1kahk000q008zir79h7x2" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/soup/">soup</a></li></ul>
@@ -610,7 +660,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/Isomorphic-React-render/" data-id="ciiqkqp0i001kvx8zhzahbbf3" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/Isomorphic-React-render/" data-id="ciir1kaim001m008zycv28y5n" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/isomorphic/">isomorphic</a></li></ul>
@@ -655,7 +705,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/react-native-FAQ/" data-id="ciiqkqoz7000ovx8zq3fgbyc4" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/react-native-FAQ/" data-id="ciir1kaha000o008zrvn7sbzu" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react-native/">react native</a></li></ul>
@@ -704,7 +754,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/react-native-install/" data-id="ciiqkqoz2000lvx8zb0agao84" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/react-native-install/" data-id="ciir1kah7000l008zxx25h4bc" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react-native/">react native</a></li></ul>
@@ -747,7 +797,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/frontend-interview-questions/" data-id="ciiqkqp080018vx8z5ggp0uuk" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/frontend-interview-questions/" data-id="ciir1kaie001a008zui32ifj9" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/interview/">interview</a></li></ul>
@@ -790,7 +840,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/js-basics-closure/" data-id="ciiqkqozl000uvx8zxenrnvgl" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/js-basics-closure/" data-id="ciir1kahs000u008z3v6netr5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/closure/">closure</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/interview/">interview</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
@@ -836,7 +886,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/how-to-start/" data-id="ciiqkqozx0010vx8z307bf8wf" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/how-to-start/" data-id="ciir1kahx0010008z08w7j4um" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sticky/">sticky</a></li></ul>
@@ -895,7 +945,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/zero-to-one/" data-id="ciiqkqoy10003vx8ztefdsid9" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/zero-to-one/" data-id="ciir1kagb0003008zm1sc7rvm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -934,7 +984,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/42/" data-id="ciiqkqowr0000vx8z29s5q6y6" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/42/" data-id="ciir1kafi0000008z9tbuisrl" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/42/">42</a></li></ul>
@@ -981,7 +1031,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/hello-world/" data-id="ciiqkqp010013vx8z1gyxx1cz" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/hello-world/" data-id="ciir1kai00013008zerl0i5no" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1017,7 +1067,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/10/hello-world-1/" data-id="ciiqkqp040014vx8zb6u3d4ov" class="article-share-link">Share</a>
+      <a data-url="http://qianxueseng.com/2015/10/hello-world-1/" data-id="ciir1kai30014008zsnmm42yw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1039,7 +1089,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/42/">42</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/closure/">closure</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/commonjs/">commonjs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/es6/">es6</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html5/">html5</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/">interview</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/isomorphic/">isomorphic</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/module/">module</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/os/">os</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react-native/">react native</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/soup/">soup</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sticky/">sticky</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/">tools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wechat/">wechat</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zen/">zen</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/42/">42</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/closure/">closure</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/commonjs/">commonjs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/es6/">es6</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html5/">html5</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/">interview</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/isomorphic/">isomorphic</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/module/">module</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/os/">os</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react-native/">react native</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/soup/">soup</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sticky/">sticky</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/">tools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wechat/">wechat</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zen/">zen</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -1048,7 +1098,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/42/" style="font-size: 10px;">42</a> <a href="/tags/closure/" style="font-size: 10px;">closure</a> <a href="/tags/commonjs/" style="font-size: 10px;">commonjs</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a> <a href="/tags/isomorphic/" style="font-size: 10px;">isomorphic</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/module/" style="font-size: 10px;">module</a> <a href="/tags/os/" style="font-size: 10px;">os</a> <a href="/tags/react-native/" style="font-size: 20px;">react native</a> <a href="/tags/soup/" style="font-size: 10px;">soup</a> <a href="/tags/sticky/" style="font-size: 10px;">sticky</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/wechat/" style="font-size: 10px;">wechat</a> <a href="/tags/zen/" style="font-size: 10px;">zen</a>
+      <a href="/tags/42/" style="font-size: 10px;">42</a> <a href="/tags/closure/" style="font-size: 10px;">closure</a> <a href="/tags/commonjs/" style="font-size: 10px;">commonjs</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/github/" style="font-size: 20px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a> <a href="/tags/isomorphic/" style="font-size: 10px;">isomorphic</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/module/" style="font-size: 10px;">module</a> <a href="/tags/os/" style="font-size: 10px;">os</a> <a href="/tags/react-native/" style="font-size: 20px;">react native</a> <a href="/tags/soup/" style="font-size: 10px;">soup</a> <a href="/tags/sticky/" style="font-size: 10px;">sticky</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/wechat/" style="font-size: 10px;">wechat</a> <a href="/tags/zen/" style="font-size: 10px;">zen</a>
     </div>
   </div>
 
@@ -1057,7 +1107,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">12</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">12</span></li></ul>
     </div>
   </div>
 
@@ -1067,6 +1117,10 @@ ga('send', 'pageview');
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2015/12/github-pages-custom-domain/">github pages custom domain</a>
+          </li>
         
           <li>
             <a href="/2015/12/the-zen-of-python/">the zen of python</a>
@@ -1082,10 +1136,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2015/11/the-wrong-way-to-learn-front-end/">the wrong way to learn front end</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/what-is-h5/">what is h5</a>
           </li>
         
       </ul>
