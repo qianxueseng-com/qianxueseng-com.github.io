@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qianxueseng.com/2015/10/how-to-start/</loc>
+    <lastmod>2016-03-18T07:33:38.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://qianxueseng.com/2016/03/pete-hunt-react-rethinking-best-practices/</loc>
     <lastmod>2016-03-18T06:30:36.000Z</lastmod>
   </url>
@@ -14,11 +19,6 @@
   <url>
     <loc>http://qianxueseng.com/2015/12/react-baidu-home-page/</loc>
     <lastmod>2016-03-17T07:05:11.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://qianxueseng.com/2015/10/how-to-start/</loc>
-    <lastmod>2016-03-11T17:50:25.000Z</lastmod>
   </url>
   
   <url>
