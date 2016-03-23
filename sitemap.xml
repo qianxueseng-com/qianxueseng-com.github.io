@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qianxueseng.com/2016/03/javascript-the-good-parts/</loc>
+    <lastmod>2016-03-23T04:19:39.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://qianxueseng.com/2015/12/react-baidu-home-page/</loc>
     <lastmod>2016-03-21T03:55:50.000Z</lastmod>
   </url>
