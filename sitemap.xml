@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qianxueseng.com/2015/10/how-to-start/</loc>
+    <lastmod>2016-03-24T07:03:19.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://qianxueseng.com/2016/03/javascript-the-good-parts/</loc>
     <lastmod>2016-03-23T04:19:39.000Z</lastmod>
   </url>
@@ -19,11 +24,6 @@
   <url>
     <loc>http://qianxueseng.com/2016/03/react-conf-2016-ben-alpert-what-lies-ahead/</loc>
     <lastmod>2016-03-20T04:52:25.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://qianxueseng.com/2015/10/how-to-start/</loc>
-    <lastmod>2016-03-18T07:33:38.000Z</lastmod>
   </url>
   
   <url>
