@@ -3,30 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>github pages custom domain | 前学僧 | 做项目，学前端</title>
+  <title>Archives: 2016/4 | 前学僧 | 做项目，学前端</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="给github pages设置域名步骤
-创建一个repo，例如https://github.com/qianxueseng-com/askvc.com
-
-clone到本地并创建gh-pages branch然后push
-1234567git clone https://github.com/qianxueseng-com/askvc.com.gitgit checkout -b gh-pagese">
-<meta property="og:type" content="article">
-<meta property="og:title" content="github pages custom domain">
-<meta property="og:url" content="http://qianxueseng.com/2015/12/github-pages-custom-domain/index.html">
+  <meta name="description" content="前学僧 前端 前端培训 javascript html css angular react react native">
+<meta property="og:type" content="website">
+<meta property="og:title" content="前学僧 | 做项目，学前端">
+<meta property="og:url" content="http://qianxueseng.com/archives/2016/04/index.html">
 <meta property="og:site_name" content="前学僧 | 做项目，学前端">
-<meta property="og:description" content="给github pages设置域名步骤
-创建一个repo，例如https://github.com/qianxueseng-com/askvc.com
-
-clone到本地并创建gh-pages branch然后push
-1234567git clone https://github.com/qianxueseng-com/askvc.com.gitgit checkout -b gh-pagese">
-<meta property="og:updated_time" content="2015-12-29T06:57:10.000Z">
+<meta property="og:description" content="前学僧 前端 前端培训 javascript html css angular react react native">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="github pages custom domain">
-<meta name="twitter:description" content="给github pages设置域名步骤
-创建一个repo，例如https://github.com/qianxueseng-com/askvc.com
-
-clone到本地并创建gh-pages branch然后push
-1234567git clone https://github.com/qianxueseng-com/askvc.com.gitgit checkout -b gh-pagese">
+<meta name="twitter:title" content="前学僧 | 做项目，学前端">
+<meta name="twitter:description" content="前学僧 前端 前端培训 javascript html css angular react react native">
   
     <link rel="alternative" href="/atom.xml" title="前学僧 | 做项目，学前端" type="application/atom+xml">
   
@@ -97,75 +84,39 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-github-pages-custom-domain" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/12/github-pages-custom-domain/" class="article-date">
-  <time datetime="2015-12-29T06:42:37.000Z" itemprop="datePublished">2015-12-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+        <section id="main">
   
-    <h1 class="article-title" itemprop="name">
-      github pages custom domain
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2016/04/be-predictable-not-correct/" class="archive-article-date">
+  <time datetime="2016-04-05T03:03:19.000Z" itemprop="datePublished">Apr 4</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/04/be-predictable-not-correct/">be predictable not correct</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="给github_pages设置域名">给github pages设置域名</h1><h3 id="步骤">步骤</h3><ul>
-<li><p>创建一个repo，例如<a href="https://github.com/qianxueseng-com/askvc.com" target="_blank" rel="external">https://github.com/qianxueseng-com/askvc.com</a></p>
-</li>
-<li><p>clone到本地并创建gh-pages branch然后push</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/qianxueseng-<span class="keyword">com</span>/askvc.<span class="keyword">com</span>.git</span><br><span class="line">git checkout -<span class="keyword">b</span> gh-pages</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"askvc.com"</span> &gt; CNAME</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"this is index.html"</span> &gt; <span class="built_in">index</span>.html</span><br><span class="line">git <span class="built_in">add</span> .</span><br><span class="line">git commit</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置DNS</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">askvc</span><span class="class">.com</span> <span class="tag">--</span> <span class="tag">A</span>     <span class="tag">--</span> 192<span class="class">.30</span><span class="class">.252</span><span class="class">.153</span></span><br><span class="line"><span class="tag">askvc</span><span class="class">.com</span> <span class="tag">--</span> <span class="tag">A</span>     <span class="tag">--</span> 192<span class="class">.30</span><span class="class">.252</span><span class="class">.154</span></span><br><span class="line"><span class="tag">www</span>       <span class="tag">--</span> <span class="tag">CNAME</span> <span class="tag">--</span> <span class="tag">askvc</span><span class="class">.com</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>大功告成，可以访问<a href="askvc.com">askvc</a></p>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://qianxueseng.com/2015/12/github-pages-custom-domain/" data-id="cimmux9ts001rj38zrsjonzt4" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2015/12/react-baidu-home-page/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          react baidu home page
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2015/12/the-zen-of-python/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">the zen of python</div>
-    </a>
-  
-</nav>
-
-  
 </article>
-
+  
+  
+    </div></section>
+  
 </section>
         
           <aside id="sidebar">
