@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qianxueseng.com/2016/04/f8-2016/</loc>
+    <lastmod>2016-04-14T03:38:16.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://qianxueseng.com/2016/04/creating-scalable-javascript-architecture/</loc>
     <lastmod>2016-04-12T04:00:23.000Z</lastmod>
   </url>
